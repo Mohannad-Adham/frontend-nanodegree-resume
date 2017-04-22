@@ -10,5 +10,8 @@ var bio = {
 }
 
 text = bio.name + "<br/>" + bio.role + "<br/>" + bio.email + "<br/>" + bio.message;
+bio["city"] = "Damascus";
+bio.country = "France";
+text += "<br />" + bio.city + "<br />" + bio["country"];
 
 $("#main").append(text);
