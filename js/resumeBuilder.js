@@ -2,7 +2,7 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 var bio = {
-	"name" : "Mohannad",
+	"name" : "Mohannad Adham",
 	"role" : "Geoinformatics specialist",
 	"email" : "mohannad.adm@gmail.com",
 	"message" : "Welcome to my world!",
@@ -64,9 +64,18 @@ var project = {"projects": [
 	}]}
 
 //$("#main").append(education_txt);
+var headerName = HTMLheaderName.replace("%data%", bio.name);
+$("#header").append(headerName);
 
+if (bio.skills.length > 0){
+	$('#header').append(HTMLskillsStart);
+	for (var i = 0; i < bio.skills.length; i++) {
+		var formatedSkill = HTMLskills.replace("%data%", bio.skills[i]);
+		$('#skills').append(formatedSkill);
+	}
 
-
+}
+console.log(bio.skills);
 
 
 
