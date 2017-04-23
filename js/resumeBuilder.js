@@ -37,7 +37,18 @@ var education = { "schools": [ {
 	"major": "Hydrogeology"
 
 }
-]}
+],
+"onlineCourses": [{
+	"title": "Introduction to computer science and programming",
+	"school": "MIT",
+	"year": "2013"
+},
+{
+	"title": "Imagery, automation and applications",
+	"school": "UC Davis",
+	"year": "2016"
+}]
+}
 
 
 $("#main").append(education_txt);
