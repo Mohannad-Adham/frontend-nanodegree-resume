@@ -63,7 +63,7 @@ var project = {"projects": [
 
 	}]}
 
-$("#main").append(education_txt);
+//$("#main").append(education_txt);
 
 
 
