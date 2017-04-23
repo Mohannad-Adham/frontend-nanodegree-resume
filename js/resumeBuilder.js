@@ -75,7 +75,7 @@ if (bio.skills.length > 0){
 	}
 
 }
-console.log(bio.skills);
+
 
 
 
