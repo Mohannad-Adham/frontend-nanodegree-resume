@@ -23,12 +23,26 @@ work.city = "Damascus";
 work_txt = "<br/>" + work.position;
 $("#main").append(work_txt);
 
-var education = {};
-education["name"] = "Jean Monnet University";
-education["years"] = "2016 - 2017";
-education["city"] = "Saint Etienne";
-education_txt =  "<br/>" + education["name"];
+var education = { "schools": [ {
+	"name": "Jean Monnet University",
+	"city": "Saint Etienne, France",
+	"degree": "Master",
+	"major": "Geoinformatics"
+}, 
+
+{
+	"name": "Damascus University",
+	"city": "Damascus, Syria",
+	"degree": "BSc",
+	"major": "Hydrogeology"
+
+}
+]}
+
+
 $("#main").append(education_txt);
+
+
 
 
 
