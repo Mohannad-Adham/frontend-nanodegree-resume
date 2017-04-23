@@ -84,6 +84,12 @@ if (bio.skills.length > 0){
 
 }
 
-
+for (job in work.jobs) {
+	console.log(work.jobs[job]);
+	$('#workExperience').append(HTMLworkStart);
+	var employer_formated = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
+	var title_formated = HTMLworkTitle.replace('%data%', work.jobs[job].position);
+	$(".work-entry:last").append(employer_formated + title_formated);
+}
 
 
