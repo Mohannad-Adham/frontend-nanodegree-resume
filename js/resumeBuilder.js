@@ -15,7 +15,23 @@ var bio = {
 // text += "<br />" + bio.city + "<br />" + bio["country"];
 // $("#main").append(text);
 
-var work = {};
+var work = {"jobs": [{
+		"position": "Groundwater Modeler and Geoinformatics Specialist",
+		"employer": "ACSAD",
+		"years": "2013 - 2015",
+		"city": "Damascus, Syria"
+	},
+	{
+		"position": "Teaching Assistant of Hydrogeology",
+		"employer": "AlBaath University",
+		"years": "2013 - 2015",
+		"city": "Homs, Syria"
+	}
+
+
+	]};
+
+
 work.position = "Groundwater Modeler and Geoinformatics Specialist";
 work.employer = "ACSAD";
 work.years = "2013 - 2015";
