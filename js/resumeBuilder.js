@@ -27,17 +27,9 @@ var work = {"jobs": [{
 		"years": "2013 - 2015",
 		"city": "Homs, Syria"
 	}
-
-
 	]};
 
 
-work.position = "Groundwater Modeler and Geoinformatics Specialist";
-work.employer = "ACSAD";
-work.years = "2013 - 2015";
-work.city = "Damascus";
-work_txt = "<br/>" + work.position;
-$("#main").append(work_txt);
 
 var education = { "schools": [ {
 	"name": "Jean Monnet University",
