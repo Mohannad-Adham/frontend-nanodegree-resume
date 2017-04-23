@@ -13,5 +13,16 @@ text = bio.name + "<br/>" + bio.role + "<br/>" + bio.email + "<br/>" + bio.messa
 bio["city"] = "Damascus";
 bio.country = "France";
 text += "<br />" + bio.city + "<br />" + bio["country"];
-
 $("#main").append(text);
+
+var work = {};
+work.position = "Groundwater Modeler and Geoinformatics Specialist";
+work.employer = "ACSAD";
+work.years = "2013 - 2015";
+work.city = "Damascus";
+work_txt = "<br/>" + work.position;
+$("#main").append(work_txt);
+
+
+
+
