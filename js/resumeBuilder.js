@@ -6,7 +6,7 @@ var bio = {
 	"role" : "Geoinformatics specialist",
 	"email" : "mohannad.adm@gmail.com",
 	"message" : "Welcome to my world!",
-	"skills" : ["python", "JavaScript", "HTML", "CSS", "VBA", "SQL"]
+	"skills" : ["python", "JavaScript", "CSS", "PHP", "SQL", "VBA"]
 }
 
 // text = bio.name + "<br/>" + bio.role + "<br/>" + bio.email + "<br/>" + bio.message;
