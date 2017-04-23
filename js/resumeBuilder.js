@@ -27,7 +27,7 @@ var education = {};
 education["name"] = "Jean Monnet University";
 education["years"] = "2016 - 2017";
 education["city"] = "Saint Etienne";
-education_txt =  "<br/>" + education.name;
+education_txt =  "<br/>" + education["name"];
 $("#main").append(education_txt);
 
 
