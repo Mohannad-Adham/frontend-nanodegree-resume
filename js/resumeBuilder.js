@@ -9,11 +9,11 @@ var bio = {
 	"skills" : ["python", "JavaScript", "HTML", "CSS", "VBA", "SQL"]
 }
 
-text = bio.name + "<br/>" + bio.role + "<br/>" + bio.email + "<br/>" + bio.message;
-bio["city"] = "Damascus";
-bio.country = "France";
-text += "<br />" + bio.city + "<br />" + bio["country"];
-$("#main").append(text);
+// text = bio.name + "<br/>" + bio.role + "<br/>" + bio.email + "<br/>" + bio.message;
+// bio["city"] = "Damascus";
+// bio.country = "France";
+// text += "<br />" + bio.city + "<br />" + bio["country"];
+// $("#main").append(text);
 
 var work = {};
 work.position = "Groundwater Modeler and Geoinformatics Specialist";
@@ -50,6 +50,18 @@ var education = { "schools": [ {
 }]
 }
 
+var project = {"projects": [
+	{
+		"title": "Developing a groundwater model for the coastal basin of Syria",
+		"company": "ACSAD",
+		"years": "2013 - 2015"
+	},
+	{
+		"title": "Developing a groundwater model for the Orontes basin in Syria",
+		"company": "ACSAD",
+		"years": "2014 - 2015"
+
+	}]}
 
 $("#main").append(education_txt);
 
