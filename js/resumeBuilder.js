@@ -87,16 +87,19 @@ if (bio.skills.length > 0){
 
 }
 
-for (job in work.jobs) {
-	console.log(work.jobs[job]);
-	$('#workExperience').append(HTMLworkStart);
-	var employer_formated = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
-	var title_formated = HTMLworkTitle.replace('%data%', work.jobs[job].position);
-	var years_formated = HTMLworkDates.replace('%data%', work.jobs[job].years);
-	var location_formated = HTMLworkLocation.replace('%data%', work.jobs[job].location);
-	var description_formated = HTMLworkDescription.replace('%data%', work.jobs[job].description);
-	$(".work-entry:last").append(employer_formated + title_formated + years_formated + location_formated + description_formated);
-	console.log(years_formated + " "  + location_formated + " " + description_formated);
+function displayWork(){
+	for (job in work.jobs) {
+		console.log(work.jobs[job]);
+		$('#workExperience').append(HTMLworkStart);
+		var employer_formated = HTMLworkEmployer.replace('%data%', work.jobs[job].employer);
+		var title_formated = HTMLworkTitle.replace('%data%', work.jobs[job].position);
+		var years_formated = HTMLworkDates.replace('%data%', work.jobs[job].years);
+		var location_formated = HTMLworkLocation.replace('%data%', work.jobs[job].location);
+		var description_formated = HTMLworkDescription.replace('%data%', work.jobs[job].description);
+		$(".work-entry:last").append(employer_formated + title_formated + years_formated + location_formated + description_formated);
+		console.log(years_formated + " "  + location_formated + " " + description_formated);
+	}
 }
 
 
+displayWork();
