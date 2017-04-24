@@ -100,10 +100,18 @@ function displayWork(){
 		console.log(years_formated + " "  + location_formated + " " + description_formated);
 	}
 }
-
-
 displayWork();
 
 $(document).click(function(loc) {
   logClicks(loc.pageX, loc.pageY);
 });
+
+$('#main').append(internationalizeButton);
+var inName = function(name) {
+	name_list = name.split(" ");
+	first_name = name_list[0];
+	last_name = name_list[1];
+	in_first_name = first_name[0].toUpperCase() + first_name.substring(1);
+	in_last_name = last_name.toUpperCase();
+	return in_first_name + ' ' + in_last_name;
+}
